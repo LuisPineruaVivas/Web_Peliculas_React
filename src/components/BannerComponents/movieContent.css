@@ -1,0 +1,90 @@
+.banner .content{
+    position: relative;
+    max-width: 550px;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0);
+    transition: 1s;
+    z-index: 1000;
+}
+
+.banner .content.active {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.movie-title{
+    max-width: 500px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-align: center;
+    font-family: Comic Sans MS; 
+    font-weight:bold; 
+    color: var(--primary); 
+    text-shadow: -1px 0 #414D68, 0 1px #414D68, 1px 0 #414D68, 0 -1px #414D68, -2px 2px 0 #414D68, 2px 2px 0 #414D68, 1px 1px #414D68, 2px 2px #414D68, 3px 3px #414D68, 4px 4px #414D68, 5px 5px #414D68;
+}
+
+.movie-title h2{
+    font-size: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+    .movie-title h2{
+        font-size: 30px;
+    }
+
+    .banner .content{
+        min-width: 300px;
+    }
+
+    .banner .content h4{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .mobile{
+        margin-left: -70px;
+    }
+    
+}
+
+.banner .content h4 {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.banner .content h4 span{
+    padding: 0 10px;
+    border-right: 1px solid  rgba(255, 255, 255, 0.6);
+}
+
+.banner .content h4 span:first-child{
+    padding-left: 0;
+}
+
+.banner .content h4 span:last-child{
+    border-right: 0;
+}
+
+.banner .content h4 span i{
+    background: var(--primary);
+    color: #ffffff;
+    padding: 5px;
+    display: inline-block;
+    border-radius: 2px;
+}
+
+.banner .content p {
+    font-size: 0.8em;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: #ffffff;
+    margin: 20px 0px;
+}

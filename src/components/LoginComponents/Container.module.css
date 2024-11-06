@@ -1,0 +1,54 @@
+.LoginWrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    min-width: 740px;
+    height: 100%;
+    transition: .6s ease-in-out;
+}
+
+.ActiveLogin{
+    margin-left: -800px;
+}
+
+.RegistrationWrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    gap: 30px;
+    min-width: 700px;
+    height: 100%;
+    transition: .6s ease-in-out;
+}
+
+.ActiveRegistration{
+    margin-right: 800px;
+}
+
+@media screen and (max-width: 900px) {
+    .RegistrationWrapper, .LoginWrapper{
+        min-width: 100%;
+    }
+
+    .ActiveLogin{
+        margin-left: -560px;
+    }
+
+    .ActiveRegistration{
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .RegistrationWrapper, .LoginWrapper{
+        min-width: 100%;
+    }
+
+    .ActiveLogin{
+        margin-left: -380px;
+    }
+
+    .ActiveRegistration{
+        margin-left: 0px;
+    }
+}

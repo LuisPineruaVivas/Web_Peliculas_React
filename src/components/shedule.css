@@ -1,0 +1,26 @@
+.shedule .filters{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.shedule .filters li {
+    color: #ffffff;
+    padding: 10px 25px;
+    background: #191919;
+    transition: 0.3s;
+    text-transform: uppercase;
+    cursor: pointer;
+} 
+
+.shedule .filters li:hover,
+.shedule .filters li.active {
+    background: var(--primary);
+}
+
+h2{
+    color: var(--primary);
+    text-align: center;
+}

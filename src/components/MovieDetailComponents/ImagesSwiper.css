@@ -1,0 +1,19 @@
+.imagesSwiper{
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.imagesSwiper{
+    position: relative;
+    height: 80vh;
+    width: 80vw;
+}
+
+@media only screen and (max-width: 768px) {
+    .imagesSwiper {
+        text-align: center;
+        margin-left: -60px;
+        height: 25vh;
+        width: 80vw;
+    }
+}

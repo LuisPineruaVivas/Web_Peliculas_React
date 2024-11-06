@@ -1,0 +1,80 @@
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 50px;
+    transition: 0.5s;
+    z-index: 10000;
+}
+
+
+.logo{
+    font-family: 'Racing Sans One', cursive;
+    font-size: 20px;
+    color: #ffffff;
+    letter-spacing: 2px;
+    font-weight: 800;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav{
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hamburger-menu {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #ffffff;
+  }
+
+.items.close{
+    display: none;
+}
+
+@media (max-width: 768px) {
+  /* Hide the nav items by default on small screens */
+  .nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust to be below the header */
+    right: 15px;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background */
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Show the nav when the menu is open */
+  .nav.open {
+    display: flex;
+    width: 200px;
+  }
+
+  .items.open{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1000;
+  }
+
+  /* Show hamburger menu on small screens */
+  .hamburger-menu {
+    display: block;
+  }
+
+  .mobile {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+}
