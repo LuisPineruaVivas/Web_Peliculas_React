@@ -1,11 +1,14 @@
 import React from 'react'
 import './footerNavItem.css'
+import { Link } from 'react-router-dom';
 
 function FooterNavItem({ name }) {
   return (
     <li>
         <ion-icon name="chevron-forward-outline"></ion-icon>
-        <a href={name.link}>{name.name}</a>
+        <Link to={name.link}>
+          {name.name}
+        </Link>
     </li>
   )
 }
