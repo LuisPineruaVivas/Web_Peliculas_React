@@ -9,9 +9,8 @@ import { Tab, Tabs } from '@material-ui/core';
 import { styled } from '@mui/material/styles';
 
 const StyledTab = styled(Tab)({
-  color: 'white',
   "&.Mui-selected": {
-    color: "white"
+    color: "var(--primary)"
   }
 });
 
@@ -91,8 +90,8 @@ function SearchSchedule() {
             setType(newValue);
           }}
         >
-          <StyledTab style={{ width: "50%" }} label="Buscar Pelicula" />
-          <StyledTab style={{ width: "50%" }} label="Buscar Serie" />
+          <StyledTab style={{ width: "50%", color: "white" }} label="Buscar Pelicula" />
+          <StyledTab style={{ width: "50%", color: "white" }} label="Buscar Serie" />
         </Tabs>
 
         <div className="row mt-5">

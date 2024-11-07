@@ -2,6 +2,8 @@
 
 Movie website developed in React, The info of the movies comes from the Movie Database Api
 
+Check a Live Preview here : [https://webmovie-website.netlify.app/]
+
 ## Available Scripts
 
 In the project directory, you can run:
