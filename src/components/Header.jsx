@@ -4,6 +4,7 @@ import NavListItem from './HeaderComponents/NavListItem';
 import navListData from '../data/navListData';
 import Button from './HeaderComponents/Button';
 import Search from './HeaderComponents/search';
+import { Link } from 'react-router-dom';
 
 function Header({bool}) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -32,10 +33,13 @@ function Header({bool}) {
           <ul className={`nav ${isMenuOpen ? 'open' : ''}`}>
               {
               navListData.map(nav => (
-                  <a className='mobile' key={nav._id} href={nav.link}>{nav.name}</a>
+                  <Link className='mobile' to={nav.link} key={nav._id}>
+                    {nav.name}
+                  </Link>
+                  
               ))
               }
-              <a href="/searchPage" className="mobile">Buscar</a>
+              <Link className='mobile' to='/searchPage'>Buscar</Link>
            </ul>
         </div>
     </header>
